@@ -1,4 +1,25 @@
-# TeleChan - message api for telegram bot
+⚠️⚠️⚠️ 由于近期 vercel 环境疑似做了调整，新部署的机器人识别命令会报错(原来创建的机器人不受影响)，我最近没空修改此项目，先 Archive 掉。着急使用的同学可以 fork & fix 先。
+
+# TeleChan - message api for telegram bot 
+> 可供多人发送消息的 telegram 机器人 api ， 类似server酱的开源实现
+
+## 🎈 本项目属于方糖推送生态。该生态包含项目如下：
+
+- [Server酱Turbo](https://sct.ftqq.com)：支持企业微信、微信服务号、钉钉、飞书群机器人等多通道的在线服务，无需搭建直接使用，每天有免费额度
+- [Wecom酱](https://github.com/easychen/wecomchan)：通过企业微信推送消息到微信的消息推送函数和在线服务方案，开源免费，可自己搭建。支持多语言
+- [Tele酱](https://github.com/easychen/telechan)：可以通过 Vercel 免费部署，且部署后 API 在国内网络可访问的 Telegram 多账户消息推送机器人
+
+## 直接试用我搭建的机器人
+
+1. 添加 @TeleChan8Bot
+2. 发送 /sendkey 获得 key 和 url
+3. 通过 url 发送请求即可
+
+## Example
+
+1. add @TeleChan8Bot in telegram
+2. `/sendkey` to get key & url
+3. send request via url 
 
 ## How to use
 
@@ -16,6 +37,7 @@ Both HTTP `GET` or `POST` are OK
 - sendkey,required
 - text,required
 - desp,optional
+- markdown,optional
 
 `text` and `desp` support [telegram markdown](https://core.telegram.org/bots/api#markdownv2-style) which is a very small subset of markdown without image support
 
